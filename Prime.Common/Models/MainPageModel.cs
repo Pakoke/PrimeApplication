@@ -6,7 +6,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using Xamvvm;
 
-namespace Prime.Common
+namespace Prime.Common.Models
 {
     public class MainPageModel : BasePageModel
     {
@@ -27,10 +27,10 @@ namespace Prime.Common
                 new MenuItem() {
                     Section = "FlowListView",
                     Title = "Update items example",
-                    Detail = "Update items example",
                     Command = new BaseCommand(async (param) =>
                     {
-                        var page = this.GetPageFromCache<UpdateItemsPageModel>();
+                        var page = this.GetPageFromCache<ProductsGridPageModel>();
+                        
                         await this.PushPageAsync(page, (model) => model.ReloadData());
                     }),
                 }

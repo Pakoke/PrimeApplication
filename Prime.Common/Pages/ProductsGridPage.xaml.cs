@@ -6,7 +6,7 @@ using Xamvvm;
 
 namespace Prime.Common.Pages
 {
-    public partial class ProductsGridPage : ContentPage, IBasePage<UpdateItemsPageModel>
+    public partial class ProductsGridPage : ContentPage, IBasePage<ProductsGridPageModel>
     {
         public ProductsGridPage()
         {

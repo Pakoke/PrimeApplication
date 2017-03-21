@@ -9,12 +9,12 @@ using Plugin.Toasts;
 
 namespace Prime.Common.Models
 {
-    public class UpdateItemsPageModel : BasePageModel
+    public class ProductsGridPageModel : BasePageModel
     {
         static int insertId = 0;
         IToastNotificator notificator = DependencyService.Get<IToastNotificator>();
 
-        public UpdateItemsPageModel()
+        public ProductsGridPageModel()
         {
             ItemTappedCommand = new BaseCommand((param) =>
             {

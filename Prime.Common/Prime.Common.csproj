@@ -36,26 +36,27 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Database\CustomerDatabase.cs" />
     <Compile Include="Database\ISQLite.cs" />
+    <Compile Include="Dtos\PrimeMaterialDto.cs" />
     <Compile Include="Dtos\ProductDto.cs" />
+    <Compile Include="Dtos\ShopDto.cs" />
+    <Compile Include="Dtos\UserDto.cs" />
     <Compile Include="Grouping.cs" />
     <Compile Include="Helpers\Theming.cs" />
-    <Compile Include="MainNavigationPageModel.cs" />
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Models\MainNavigationPageModel.cs" />
+    <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPageModel.cs" />
+    <Compile Include="Models\MainPageModel.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\BaseNotify.cs" />
     <Compile Include="Models\ColorTheme.cs" />
     <Compile Include="Models\HomePageModel.cs" />
     <Compile Include="Models\IDirty.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\UpdateItemsPageModel.cs" />
+    <Compile Include="Models\ProductsGridPageModel.cs" />
     <Compile Include="Pages\BaseContentPage.cs" />
-    <Compile Include="Pages\HomePage.xaml.cs">
-      <DependentUpon>HomePage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\ProductsGridPage.xaml.cs">
       <DependentUpon>ProductsGridPage.xaml</DependentUpon>
     </Compile>
@@ -107,19 +108,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\HomePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Pages\ProductsGridPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MainPage.xaml">
+    <EmbeddedResource Include="Pages\MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

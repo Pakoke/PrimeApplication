@@ -1,5 +1,6 @@
 ﻿using DLToolkit.Forms.Controls;
 using Prime.Common.Helpers;
+using Prime.Common.Models;
 using Prime.Common.Pages;
 using System;
 using System.Collections.Generic;
@@ -44,7 +45,6 @@ namespace Prime.Common
             factory.RegisterNavigationPage<MainNavigationPageModel>(() => this.GetPageAsNewInstance<MainPageModel>());
             XamvvmCore.SetCurrentFactory(factory);
             MainPage = this.GetPageFromCache<MainNavigationPageModel>() as Page;
-
             //MainPage = new NavigationPage(new HomePage());
         }
 
